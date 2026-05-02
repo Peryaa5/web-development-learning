@@ -1,0 +1,193 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Ubuntu Mono', monospace;
+	margin: 0;
+	 background: #07162b;
+    color: #e6edf7;
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.news {
+    background: #10233f;
+    color: #e6edf7;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.news img {
+    max-width: 35%;
+    height: auto;
+}
+.logo {
+    margin: 0 30px 0 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #45e6ff;
+    text-transform: uppercase;
+    text-shadow:
+        2px 2px 0 #003b46,
+        4px 4px 0 #001f26,
+        0 0 10px #45e6ff,
+        0 0 20px #45e6ff;
+}
+.zero {
+    text-decoration: none;
+	 font-size: 30px;
+	 margin-left: 20px;
+    text-shadow: 0 0 5px #8dfc00;
+}
+.header {
+      display: flex;
+    align-items: center;
+    padding: 12px 20px 12px 0;
+    background: #0b1d36;
+}
+.line {
+    width: 4px;
+    height: 55px;
+    background: #8dfc00;
+    margin-right: 20px;
+}
+.header h1 {
+    margin: 0 30px 0 0;
+}
+
+
+.header a {
+    color: black;
+    margin-right: 20px;
+}
+.header a:hover {
+    color: red;
+}
+.menu a {
+    color: #dce7f7;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.menu a:hover {
+    color:  #8dfc00;
+}
+.logout {
+    margin-left: auto;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: #45e6ff;
+    color: #07162b;
+    font-weight: bold;
+}
+.fixed {
+    position: fixed;
+    right: 20px;
+    top: 120px;
+    background: #111f35;
+    color: #8bb7ff;
+    padding: 12px;
+    width: 220px;
+    font-size: 14px;
+    border-radius: 12px;
+}
+.fixed h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #8dfc00;
+}
+.fixed ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.footer {
+    background: #0b1d36;
+    color: #dce7f7;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer a {
+    color: #8fe9ff;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.footer a:hover {
+    color: #8dfc00;
+}
+</style>    
+
+</head>
+<body>
+    <div class="container">
+        
+		<div class="header">
+			<div class="line"></div>
+			<h1 class="logo">Cyber Security News</h1>
+
+			<div class="menu">
+				<a href="#">Опять что-то произошло</a>
+				<a href="#">Мы не виноваты</a>
+			</div>
+
+			<button class="logout">Logout</button>
+		</div>
+        
+		<div class="content">
+			<div class="news">
+			<h2> <span class="zero">Zero Trust</span></h2>
+			<img src="1.png" alt="Zero Trust">
+			<p>
+				После потери пароля администратором система перестала доверять
+				не только сотрудникам, но и самому IT-отделу.
+			</p>
+
+			<p>
+				Наш корреспондент связался с представителем компании «ООО "Забыли и ладно"»:
+				<br>
+				— У вас есть система защиты?<br>
+				— Да, Zero Trust.<br>
+				— А доступ в систему есть?<br>
+				— Нет.<br>
+				— И как вы работаете?<br>
+				— Безопасно.
+			</p>
+		</div></div>
+		
+		<div class="fixed">
+			<h3>Памятка</h3>
+			<ul>
+			<li><b>Zero Trust</b> — не доверять никому, даже себе</li>
+			<li><b>Admin</b> — человек, который забыл пароль</li>
+			<li><b>Access</b> — то, чего больше нет</li>
+			</ul>
+		</div>
+
+		<div class="footer">
+			<div class="social">
+			<a href="https://t.me/peryaa5"target="_blank">Telegram</a>
+			<a href="https://vk.com/dasha_p95"target="_blank">VK</a>
+			</div>
+
+			<div class="copy">
+			© 2026 Плешакова Д.А.
+			</div>
+		</div>
+    </div>
+</body>
+</html>
