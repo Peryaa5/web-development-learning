@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Security Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cyber Security Game</h1>
+
+    <div id="menuScreen" class="menu-screen">
+        <div class="menu-ui">
+            <button class="start-button" onclick="startGame()">НАЧАТЬ ИГРУ</button>
+
+            <div class="stats">
+                <p id="resultText">Нажмите кнопку, чтобы начать игру</p>
+                <p>Удачных попыток: <span id="winCount">0</span></p>
+                <p>Неудачных попыток: <span id="loseCount">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameScreen" class="game" style="display: none;">
+
+        <img id="player" src="GirlStay.png" alt="player">
+
+        <div id="obstacles"></div>
+
+        <div class="panel">
+            <img src="PanelForButton.png" alt="panel">
+
+            <button class="button-left" onclick="moveLeft()">←</button>
+            <button class="button-jump" onclick="jump()">JUMP</button>
+            <button class="button-right" onclick="moveRight()">→</button>
+        </div>
+
+    </div>
+
+    <script src="scriptex.js"></script>
+</body>
+</html>

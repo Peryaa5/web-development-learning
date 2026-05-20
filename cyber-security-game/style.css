@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    background: #07162b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    color: #45e6ff;
+    text-shadow: 0 0 15px #45e6ff;
+}
+.game {
+    width: 1000px;
+    height: 570px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+
+    background-image: url("background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    border: 3px solid #1e9cff;
+    box-shadow: 0 0 25px #1e9cff;
+}
+
+#player {
+    position: absolute;
+
+    left: 7%;
+    bottom: 20%;
+
+    height: 28%;
+    width: auto;
+
+    display: block;
+    transition: left 0.15s linear;
+    transform-origin: center bottom;
+}
+.danger-block {
+    position: absolute;
+
+    bottom: 14%;
+
+    width: 11%;
+    height: 10%;
+
+    background-image: url("Lava.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 2;
+}
+.panel {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+
+    height: 40%;
+}
+
+.panel img {
+    width: 100%;
+    height: 100%;
+}
+
+.button-left,
+.button-right {
+    position: absolute;
+    top: 74px;
+
+    width: 52px;
+    height: 75px;
+
+    background: rgba(0, 200, 255, 0.15);
+    border: 2px solid #00c8ff;
+    border-radius: 10px;
+
+    color: #45e6ff;
+    font-size: 34px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-shadow: 0 0 15px #00c8ff;
+}
+.button-jump
+{
+    position: absolute;
+    top: 74px;
+
+    width: 112px;
+    height: 75px;
+
+    background: rgba(0, 200, 255, 0.15);
+    border: 2px solid #00c8ff;
+    border-radius: 10px;
+
+    color: #45e6ff;
+    font-size: 34px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-shadow: 0 0 15px #00c8ff;
+}
+
+.button-left {
+    left: 62px;
+}
+.button-jump {
+    left: 145px;
+}
+.button-right {
+    right: 62px;
+}
+
+.button-left:hover,
+.button-right:hover {
+    background: rgba(0, 200, 255, 0.35);
+}
+.menu-screen {
+    width: 900px;
+    height: 570px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+
+    background-image: url("Intro.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    border: 3px solid #1e9cff;
+    box-shadow: 0 0 25px #1e9cff;
+}
+
+.menu-ui {
+    position: absolute;
+    left: 63%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.start-button {
+    width: 260px;
+    height: 70px;
+
+    background: rgba(0, 200, 255, 0.18);
+    border: 3px solid #00c8ff;
+    border-radius: 14px;
+
+    color: #45e6ff;
+    font-size: 26px;
+    font-weight: bold;
+
+    cursor: pointer;
+    box-shadow: 0 0 20px #00c8ff;
+    text-shadow: 0 0 10px #00c8ff;
+}
+
+.start-button:hover {
+    background: rgba(0, 200, 255, 0.38);
+    box-shadow: 0 0 30px #00c8ff;
+}
+
+.stats {
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    background: rgba(3, 12, 25, 0.72);
+    border: 2px solid #00c8ff;
+    border-radius: 14px;
+
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 0 18px #00c8ff;
+}
+
+.stats p {
+    margin: 8px 0;
+}
+
+#resultText {
+    color: #45e6ff;
+    font-weight: bold;
+}
